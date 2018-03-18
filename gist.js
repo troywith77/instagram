@@ -3,7 +3,7 @@ function getIns(sharedData) {
   try {
     data = sharedData.entry_data.PostPage[0].graphql.shortcode_media;
   } catch (err) {
-    alert('数据错误');
+    console.log('数据错误', sharedData);
     throw Error('wrong data');
   }
   try {
